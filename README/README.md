@@ -29,8 +29,6 @@ La struttura della cartella di progetto è la seguente:
 │   ├───people
 │   └───test
 │
-├───README
-│
 ├───main_window.py
 └───main.py
 ```
@@ -89,6 +87,7 @@ Ho iniziato con lo studio e implementazione della libreria **Insight face**, ess
 ## Note sul progetto
 Il progetto è iniziato nell'ottobre 2025 come passatempo. Lo sviluppo non ha seguito un versionamento Git fin dall'inizio, principalmente per 3 motivi: scarsa familiarità con lo strumento, un approccio iniziale molto esplorativo, fatto di esperimenti su singole parti, senza mai avere una struttura stabile e l'intenzione di pubblicare solo dopo aver raggiunto qualcosa di effettivamente funzionante, soglia che non è ancora del tutto raggiunta, ma ho deciso di condividere il progetto comunque, anche solo per mostrare lo stato dei lavori.
 Solo recentemente ho cercato di dare una struttura più definita in modo da avere qualcosa di più concreto, comprensibile e aggiornabile e su cui poter continuare a costruire man mano.
+
 
 
 
