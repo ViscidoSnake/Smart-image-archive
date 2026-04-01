@@ -11,7 +11,7 @@ class Dir_path_selector(QWidget, Ui_Dir_path_selector):
         self.setupUi(self)
 
         # per test---
-        self.le_dir_path_selected.setText(r"X:\ProgettazioniPazze\progetto_foto\app_v1\archive\mixed")
+        self.le_dir_path_selected.setText(r"X:\ProgettazioniPazze\Smart-image-archive\app\archive\mixed")
         # -----
 
         self.btn_dir_path_selector.clicked.connect(self.dir_selector)
