@@ -76,8 +76,13 @@ class Analyze_photos_procedure(QScrollArea):
         det_raw_model_option = {
         'providers':['AzureExecutionProvider','CPUExecutionProvider'],
         }
-        det_raw_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\det_10g.onnx"
+
+        # per sviluppo linux
+        det_raw_model_path = r"/home/viscidosnake/.insightface/models/buffalo_l/det_10g.onnx"
         
+        # per sviluppo windows
+        # det_raw_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\det_10g.onnx"
+
         det_raw_h = insightface.model_zoo.get_model(det_raw_model_path, **det_raw_model_option)
         det_raw_h.prepare(ctx_id=-1,
                     det_thresh = raw_engine_params["det_threshold"],
@@ -136,7 +141,12 @@ class Analyze_photos_procedure(QScrollArea):
         det_model_option = {
         'providers':['AzureExecutionProvider','CPUExecutionProvider'],
         }
-        det_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\det_10g.onnx"
+
+        # per windows
+        # det_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\det_10g.onnx"
+        # per linux
+        det_model_path = r"/home/viscidosnake/.insightface/models/buffalo_l/det_10g.onnx"
+        
         det_h = insightface.model_zoo.get_model(det_model_path, **det_model_option)
         det_h.prepare(ctx_id=-1,
                     det_thresh = 0.75)
@@ -194,7 +204,14 @@ class Analyze_photos_procedure(QScrollArea):
         rec_model_option = {
         'providers':['AzureExecutionProvider','CPUExecutionProvider'],
         }
-        rec_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\w600k_r50.onnx"
+
+
+        # per windows
+        # rec_model_path = r"C:\Users\snake\.insightface\models\buffalo_l\w600k_r50.onnx"
+        # per linux
+        rec_model_path = r"/home/viscidosnake/.insightface/models/buffalo_l/w600k_r50.onnx"
+
+        
         rec_h = insightface.model_zoo.get_model(rec_model_path, **rec_model_option)
         rec_h.prepare(ctx_id=-1)
 

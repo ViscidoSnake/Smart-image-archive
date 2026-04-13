@@ -10,9 +10,12 @@ class Dir_path_selector(QWidget, Ui_Dir_path_selector):
         super().__init__()
         self.setupUi(self)
 
-        # per test---
-        self.le_dir_path_selected.setText(r"X:\ProgettazioniPazze\Smart-image-archive\app\archive\mixed")
-        # -----
+        # ------------------
+        # per test su windows
+        # self.le_dir_path_selected.setText(r"X:\ProgettazioniPazze\Smart-image-archive\app\archive\mixed")
+        # per test su Linux
+        self.le_dir_path_selected.setText(r"/home/viscidosnake/progetti/Smart-image-archive/app/archive/mixed")
+        # ------------------
 
         self.btn_dir_path_selector.clicked.connect(self.dir_selector)
 
